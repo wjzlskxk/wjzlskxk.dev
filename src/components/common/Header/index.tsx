@@ -1,4 +1,5 @@
 import React from 'react'
+import Divider from '../Divider'
 import './style.scss'
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
           <span key={idx}>{item}</span>
         ))}
       </div>
-      <div className='divider' />
+      <Divider />
     </div>
   )
 }

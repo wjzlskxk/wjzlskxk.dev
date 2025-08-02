@@ -1,4 +1,12 @@
 @font-face {
+  font-family: 'Pretendard-Thin';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Pretendard-Regular';
   src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff')
     format('woff');
@@ -28,6 +36,50 @@
     format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard-Black';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin display0-black {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+@mixin display0-bold {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+@mixin display0-semibold {
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+@mixin display0-medium {
+  font-size: 48px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+@mixin display0-regular {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+@mixin display1-black {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 0;
 }
 
 @mixin display1-bold {
@@ -123,6 +175,12 @@
 @mixin title2-regular {
   font-size: 24px;
   font-weight: 400;
+  letter-spacing: 0;
+}
+
+@mixin title2-thin {
+  font-size: 24px;
+  font-weight: 200;
   letter-spacing: 0;
 }
 
