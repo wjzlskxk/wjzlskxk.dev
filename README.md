@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# 🪄 wjzlskxk.dev – Frontend Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Made with React](https://img.shields.io/badge/Made%20with-React-61DAFB?logo=react&logoColor=white&style=flat-square)](https://react.dev/)
+[![SCSS](https://img.shields.io/badge/Styled%20with-SCSS-CC6699?logo=sass&logoColor=white&style=flat-square)](https://sass-lang.com/)
 
-## Available Scripts
+> 프론트엔드 개발자 전민찬 웹 포트폴리오
 
-In the project directory, you can run:
+## ✨ Overview
 
-### `npm start`
+`wjzlskxk.dev`는 저의 개발 역량과 감각적인 UI/UX 디자인을 바탕으로 제작한 포트폴리오 사이트입니다.  
+개발자로서의 경험, 프로젝트, 기술 스택 등을 담았습니다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- 👉 [사이트 보러가기](https://wjzlskxk.dev) -->
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🧠 기술 스택
 
-### `npm test`
+| Frontend | Styling           | ETC                       |
+| -------- | ----------------- | ------------------------- |
+| React    | SCSS, CSS Modules | TypeScript, Lucide Icons, |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React & Vite**: 빠른 빌드 속도와 컴포넌트 기반 구조
+- **SCSS**: 커스터마이징이 쉬운 스타일 구성
+- **Custom Hooks & Animation**: 타이핑 효과, 카드 인터랙션 등 유저 친화적 기능 구현
 
-### `npm run build`
+## 📁 프로젝트 구조
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+.
+├── public
+├── src
+│   ├── components       # 재사용 가능한 컴포넌트
+│   ├── style            # SCSS 모듈 (semantic, typography 등)
+│   ├── hooks            # 커스텀 훅 (타이핑 등)
+│   └── App.tsx          # 엔트리 포인트
+├── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🎯 주요 기능
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+• 🎬 타이핑 애니메이션 – AboutMe 섹션에서 동적으로 텍스트 전환
+• 🌸 파스텔 그라디언트 배경 – 감성적인 디자인 포인트
+• 🪪 Projects 컴포넌트 – 이모지, 기술 배지, 인터랙션 포함한 프로젝트 카드
 
-### `npm run eject`
+## 🛠️ 설치 및 실행
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+# 레포지토리 클론
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+git clone https://github.com/wjzlskxk/portfolio
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# 패키지 설치
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+npm install
 
-## Learn More
+# 로컬 서버 실행
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🙋‍♂️ 개발자
+
+• 전민찬 – Frontend Developer
+
+• 📸 Instagram `@wjzlskxk`
+
+• ✉️ Contact: chan2bo2@naver.com
