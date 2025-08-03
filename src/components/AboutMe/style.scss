@@ -19,6 +19,8 @@
 .one-line {
   @include display0-black;
   color: var(--Primary);
+
+  min-height: 60px;
 }
 
 .typing {
@@ -71,5 +73,9 @@
     border: none;
 
     cursor: pointer;
+  }
+
+  button:focus {
+    outline: none;
   }
 }
