@@ -6,6 +6,7 @@ import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 
 function App() {
+  
   return (
     <div className='App'>
       <Header />
