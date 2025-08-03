@@ -1,6 +1,7 @@
 @use '/src/style/color/semantic.scss' as *;
 @use '/src/style/typography/typography.scss' as *;
 @use '/src/style/flex/flex.scss' as *;
+@use '/src/style/animation/animation.scss' as *;
 
 .about-me-wrap {
   @include flex-column;
@@ -73,6 +74,10 @@
     border: none;
 
     cursor: pointer;
+  }
+
+  button:hover {
+    @include bounce-animation;
   }
 
   button:focus {
