@@ -1,13 +1,15 @@
 import React from 'react'
 import { Calendar } from 'lucide-react'
-import { projects } from '../../constants/projects.constants'
+import { projects } from '../../constants/Projects/projects.constants'
 import './style.scss'
+import { Divider } from '../common/Divider'
 
 const Projects = () => {
   return (
     <div className='project-view'>
       <div className='project-title-wrap'>
         <h1 className='project-title'>PROJECTS</h1>
+        <Divider isColored />
       </div>
       <div className='experience-section'>
         <div className='experience-grid'>

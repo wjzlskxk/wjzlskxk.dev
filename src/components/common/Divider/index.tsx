@@ -1,6 +1,10 @@
 import React from 'react'
 import './style.scss'
 
-export const Divider = () => {
-  return <div className='divider' />
+interface DividerProps {
+  isColored?: boolean
+}
+
+export const Divider = ({ isColored = false }: DividerProps) => {
+  return <div className={`divider ${isColored && 'colored'}`} />
 }

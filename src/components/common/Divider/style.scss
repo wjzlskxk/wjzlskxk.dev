@@ -8,3 +8,11 @@
     rgba(0, 0, 0, 0) 100%
   );
 }
+
+.divider.colored {
+  height: 4px;
+  width: 6rem;
+  background: linear-gradient(to right, #f9a8d4, #fef08a);
+  margin: 0 auto 2.5rem;
+  border-radius: 9999px;
+}

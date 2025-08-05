@@ -3,19 +3,19 @@
 @use '/src/style/typography/typography.scss' as *;
 
 .project-view {
-  min-height: 100vh;
-
   .project-title-wrap {
-    @include flex-row-center;
-    align-items: flex-start;
+    @include flex-column-center;
     width: calc(100% - 240px);
     padding-left: 240px;
 
     gap: 18px;
 
-    color: var(--Primary);
-
     margin-bottom: 25px;
+
+    .project-title {
+      @include display2-bold;
+      color: var(--Static-White);
+    }
   }
 
   .experience-section {
@@ -212,6 +212,10 @@
               margin-bottom: 10px;
 
               cursor: pointer;
+
+              &:focus {
+                outline: none;
+              }
             }
           }
         }
