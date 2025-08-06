@@ -11,6 +11,10 @@
 # production
 /build
 
+/config
+
+email.config.json
+
 # misc
 .DS_Store
 .env.local
