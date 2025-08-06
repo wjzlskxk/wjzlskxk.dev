@@ -201,6 +201,7 @@ const Contact = () => {
                 className='social-link'
                 href='https://github.com/wjzlskxk'
                 target='_blank'
+                rel='noreferrer'
               >
                 <div className='icon-box gray'>
                   <Github size={18} />
@@ -211,6 +212,7 @@ const Contact = () => {
                 className='social-link'
                 href='https://linkedin.com'
                 target='_blank'
+                rel='noreferrer'
               >
                 <div className='icon-box blue'>
                   <Linkedin size={18} />
@@ -221,6 +223,7 @@ const Contact = () => {
                 className='social-link'
                 href='https://velog.io/@wjzlskxk/posts'
                 target='_blank'
+                rel='noreferrer'
               >
                 <div className='icon-box sky'>
                   <NotebookPen size={18} />

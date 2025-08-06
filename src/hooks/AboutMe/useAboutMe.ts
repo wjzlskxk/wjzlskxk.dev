@@ -1,7 +1,10 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 const useAboutMe = () => {
-  const phrases = ['사용자를 생각하는', '가치있는 서비스를 만드는']
+  const phrases = useMemo(
+    () => ['사용자를 생각하는', '가치있는 서비스를 만드는'],
+    []
+  )
 
   const [displayText, setDisplayText] = useState<string>('')
   const [currentPhraseIdx, setCurrentPhraseIdx] = useState<number>(0)
