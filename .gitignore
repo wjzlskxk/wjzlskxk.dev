@@ -11,9 +11,7 @@
 # production
 /build
 
-/config
-
-email.config.json
+.env
 
 # misc
 .DS_Store
