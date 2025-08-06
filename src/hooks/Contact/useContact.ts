@@ -37,7 +37,7 @@ const useContact = () => {
         config.service_id,
         config.template_id,
         formRef.current!,
-        config.public_key
+        config.public_key!
       )
       .then(() => {
         setTimeout(() => {
