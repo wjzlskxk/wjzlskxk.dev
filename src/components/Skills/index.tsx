@@ -116,7 +116,7 @@ const Skills = () => {
   }
 
   return (
-    <div className='skills-view'>
+    <section id='skills' className='skills-view'>
       <div className='categories-section'>
         <h2>Skill Categories</h2>
         <Divider isColored />
@@ -190,7 +190,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

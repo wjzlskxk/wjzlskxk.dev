@@ -6,7 +6,7 @@ import './style.scss'
 const AboutMe = () => {
   const { displayText } = useAboutMe()
   return (
-    <div className='about-me-wrap'>
+    <section id='about' className='about-me-wrap'>
       <div className='top'>
         <h1 className='one-line typing'>{displayText}</h1>
         <h1 className='dev-gradiant'>Frontend Developer</h1>
@@ -27,7 +27,7 @@ const AboutMe = () => {
           제가 궁금하시다면?
         </button>
       </div>
-    </div>
+    </section>
   )
 }
 

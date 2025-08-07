@@ -19,5 +19,11 @@
 
   padding-right: 100px;
 
-  color: var(--Static-White);
+  a {
+    color: var(--Static-White);
+
+    &:focus {
+      outline: none;
+    }
+  }
 }

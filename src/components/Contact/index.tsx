@@ -27,7 +27,7 @@ const Contact = () => {
   } = useContact()
 
   return (
-    <div className='contact-section'>
+    <section id='contact' className='contact-section'>
       <section className='container'>
         <div className='text-block'>
           <h2>CONTACT</h2>
@@ -234,7 +234,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   )
 }
 

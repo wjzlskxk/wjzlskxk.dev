@@ -6,7 +6,7 @@ import { Divider } from '../common/Divider'
 
 const Projects = () => {
   return (
-    <div className='project-view'>
+    <section id='project' className='project-view'>
       <div className='project-title-wrap'>
         <h1 className='project-title'>PROJECTS</h1>
         <Divider isColored />
@@ -78,7 +78,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
