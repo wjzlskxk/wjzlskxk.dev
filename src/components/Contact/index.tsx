@@ -210,7 +210,7 @@ const Contact = () => {
               </a>
               <a
                 className='social-link'
-                href='https://linkedin.com'
+                href='https://www.linkedin.com/in/%EB%AF%BC%EC%B0%AC-%EC%A0%84-9a1000314'
                 target='_blank'
                 rel='noreferrer'
               >
