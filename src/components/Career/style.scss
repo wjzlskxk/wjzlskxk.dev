@@ -1,0 +1,230 @@
+@use "/src/style/color/semantic.scss" as *;
+@use "/src/style/typography/typography.scss" as *;
+
+.career-view {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 16px 120px;
+  color: var(--Static-White);
+
+  .career-title-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+    margin-bottom: 32px;
+
+    .title-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      h1 {
+        @include display2-bold;
+        color: var(--Static-White);
+      }
+
+      .title-icon {
+        width: 36px;
+        height: 36px;
+        color: var(--Primary);
+      }
+    }
+
+    .subtitle {
+      @include title2-thin;
+      color: var(--Static-White);
+    }
+  }
+
+  .timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 18px;
+
+      .timeline-marker {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dot {
+          width: 14px;
+          height: 14px;
+          background: linear-gradient(to right, #f9a8d4, #fef08a);
+          border-radius: 50%;
+          box-shadow: 0 0 0 6px rgba(249, 168, 212, 0.15);
+        }
+
+        .line {
+          flex: 1;
+          width: 2px;
+          margin-top: 8px;
+          background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+        }
+      }
+
+      .card {
+        position: relative;
+        padding: 22px;
+        border-radius: 18px;
+        background: linear-gradient(140deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(6px);
+
+        &:before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 18px;
+          padding: 1px;
+          background: linear-gradient(120deg, #f9a8d4, #fef08a);
+          mask:
+            linear-gradient(#000, #000) content-box,
+            linear-gradient(#000, #000);
+          mask-composite: exclude;
+          pointer-events: none;
+          opacity: 0.3;
+        }
+
+        .card-header {
+          display: flex;
+          justify-content: space-between;
+          gap: 12px;
+          margin-bottom: 12px;
+
+          .role-block {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .company {
+              @include label-regular;
+              letter-spacing: 0.02em;
+              color: rgba(255, 255, 255, 0.7);
+            }
+
+            h3 {
+              @include title2-semibold;
+              color: var(--Static-White);
+            }
+          }
+
+          .meta {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+
+            .meta-row {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              color: rgba(255, 255, 255, 0.75);
+              font-size: 0.95rem;
+
+              svg {
+                width: 16px;
+                height: 16px;
+                color: #f9a8d4;
+              }
+            }
+          }
+        }
+
+        .description {
+          @include body-regular;
+          color: rgba(255, 255, 255, 0.85);
+          line-height: 1.6;
+          margin-bottom: 14px;
+        }
+
+        .achievements {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          padding-left: 0;
+          margin: 0 0 14px 0;
+          list-style: none;
+
+          li {
+            display: grid;
+            grid-template-columns: 12px 1fr;
+            gap: 10px;
+            align-items: flex-start;
+            color: rgba(255, 255, 255, 0.78);
+            @include body-regular;
+
+            .bullet {
+              width: 8px;
+              height: 8px;
+              margin-top: 6px;
+              border-radius: 50%;
+              background: linear-gradient(135deg, #f9a8d4, #fef08a);
+              box-shadow: 0 0 0 4px rgba(249, 168, 212, 0.18);
+            }
+          }
+        }
+
+        .stack {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+
+          .badge {
+            @include label-semibold;
+            padding: 8px 12px;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--Static-White);
+            letter-spacing: 0.01em;
+            transition:
+              transform 0.2s ease,
+              background 0.2s ease;
+
+            &:hover {
+              transform: translateY(-2px);
+              background: rgba(255, 255, 255, 0.18);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 60px 12px 100px;
+
+    .career-title-wrap {
+      align-items: flex-start;
+    }
+
+    .timeline {
+      .timeline-item {
+        grid-template-columns: 18px 1fr;
+
+        .card {
+          padding: 18px;
+
+          .card-header {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .meta {
+              align-items: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
+}
