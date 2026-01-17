@@ -1,17 +1,18 @@
-import React from 'react'
-import { Divider } from '../Divider'
-import './style.scss'
+import React from "react";
+import { Divider } from "../Divider";
+import "./style.scss";
 
 const Header = () => {
   const HEADER_CONTENTS = [
-    { label: 'ABOUT ME', target: 'about' },
-    { label: 'PROJECTS', target: 'project' },
-    { label: 'SKILLS', target: 'skills' },
-    { label: 'CONTACT', target: 'contact' },
-  ]
+    { label: "ABOUT ME", target: "about" },
+    { label: "PROJECTS", target: "project" },
+    { label: "SKILLS", target: "skills" },
+    { label: "CONTACT", target: "contact" },
+    { label: "CAREER", target: "career" },
+  ];
   return (
-    <div className='header-wrap'>
-      <div className='header-container'>
+    <div className="header-wrap">
+      <div className="header-container">
         {HEADER_CONTENTS.map((item, idx) => (
           <a key={idx} href={`#${item.target}`}>
             {item.label}
@@ -20,7 +21,7 @@ const Header = () => {
       </div>
       <Divider />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
