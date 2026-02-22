@@ -33,7 +33,7 @@ const Career = () => {
                 <div className="card-header">
                   <div className="role-block">
                     <p className="company">{item.company}</p>
-                    <h3>{item.role}</h3>
+                    <h1>{item.role}</h1>
                   </div>
 
                   <div className="meta">

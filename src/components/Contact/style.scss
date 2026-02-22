@@ -55,7 +55,7 @@
       .form-header {
         margin-bottom: 32px;
 
-        h3 {
+        h1 {
           font-size: 1.5rem;
           font-weight: 700;
           display: flex;
@@ -217,7 +217,7 @@
       border-radius: 16px;
       padding: 24px;
 
-      h3 {
+      h1 {
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 24px;
@@ -300,16 +300,12 @@
     }
 
     .availability {
-      background: linear-gradient(
-        to bottom right,
-        rgba(253, 224, 71, 0.1),
-        rgba(249, 168, 212, 0.1)
-      );
+      background: linear-gradient(to bottom right, rgba(253, 224, 71, 0.1), rgba(249, 168, 212, 0.1));
       border: 1px solid rgba(253, 224, 71, 0.2);
       border-radius: 16px;
       padding: 24px;
 
-      h3 {
+      h1 {
         font-size: 1.25rem;
         font-weight: 700;
         margin-bottom: 16px;

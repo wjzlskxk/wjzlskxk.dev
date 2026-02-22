@@ -120,7 +120,7 @@ const Skills = () => {
               <div className={`category-header ${category.color}`}>
                 {category.icon}
                 <div>
-                  <h3>{category.title}</h3>
+                  <h1>{category.title}</h1>
                   <p>{category.skills.length} skills</p>
                 </div>
               </div>
