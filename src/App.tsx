@@ -17,8 +17,8 @@ function App() {
       <React.Suspense fallback={<div>Loading...</div>}>
         <Projects />
         <Skills />
-        <Contact />
         <Career />
+        <Contact />
       </React.Suspense>
     </div>
   );

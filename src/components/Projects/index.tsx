@@ -19,7 +19,9 @@ const Projects = () => {
               <div className="experience-card">
                 <div className="card-header">
                   <div className="card-meta">
-                    <div className="emoji-box">{proj.emoji}</div>
+                    <div className="emoji-box" aria-hidden="true">
+                      {proj.emoji}
+                    </div>
                     <div className="meta-text">
                       <h1>{proj.role}</h1>
                       <p>{proj.title}</p>
@@ -29,7 +31,7 @@ const Projects = () => {
 
                 <div className="card-details">
                   <div className="detail">
-                    <Calendar className="icon" />
+                    <Calendar className="icon" aria-hidden="true" />
                     <span>{proj.duration}</span>
                   </div>
                 </div>
@@ -59,10 +61,18 @@ const Projects = () => {
 
                 <div className="nav-link-wrap">
                   <h4>Nav Links</h4>
-                  <button onClick={() => window.open(proj.links.github)}>Gitub 바로가기</button>
-                  {proj.links.npm && <button onClick={() => window.open(proj.links.npm)}>NPM 바로가기</button>}
-                  {proj.links.service && (
-                    <button onClick={() => window.open(proj.links.service)}>서비스 바로가기</button>
+                  <button aria-label="Github" onClick={() => window.open(proj?.links?.github)}>
+                    Gitub 바로가기
+                  </button>
+                  {proj.links?.npm && (
+                    <button aria-label="NPM" onClick={() => window.open(proj?.links?.npm)}>
+                      NPM 바로가기
+                    </button>
+                  )}
+                  {proj.links?.service && (
+                    <button aria-label="Service" onClick={() => window.open(proj?.links?.service)}>
+                      서비스 바로가기
+                    </button>
                   )}
                 </div>
               </div>

@@ -11,15 +11,23 @@ export interface CareerItem {
 
 export const careerItems: CareerItem[] = [
   {
-    id: "business",
+    id: "Buisiness",
     company: "SSiS",
-    role: "Assistant",
+    role: "Public affairs supporter(Assistant) & SQL Developer",
     period: "2025.10 - 현재",
     location: "Seoul, KR",
     description:
       "수급(권)자들의 자산을 조사하여 복지 서비스 제공에 필요한 기초자료를 구축 및 자격을 결정함을 도와줍니다.",
-    achievements: [],
-    stacks: ["비공개입니다."],
+    achievements: [
+      "지자체 통합복지업무 서비스 - 행복이음 내 복지광장 질의 응답 진행 (소득재산, 공적자료, 월별/정기 확인조사)",
+      "공적자료 적재, 운영/관리에 관한 업무(지원) 수행",
+      "월별/정기 확인조사 업무 수행 지원",
+      "행정구역개편에 따른 소득재산 반영 업무 수행",
+      "연도전환 업무 수행",
+      "부양의무자 표준교육비 공제에 따른 소득재산 반영 업무 지원",
+      "국민연금 인상분에 따른 소득재산 반영 업무 지원",
+    ],
+    stacks: [],
   },
   {
     id: "Internship",

@@ -4,7 +4,7 @@ import { Divider } from "../common/Divider";
 import "./style.scss";
 
 const AboutMe = () => {
-  const { displayText } = useAboutMe();
+  const { displayText } = useAboutMe({ typingSpeed: 150, switchDelay: 800 });
   return (
     <section id="about" className="about-me-wrap">
       <div className="top">

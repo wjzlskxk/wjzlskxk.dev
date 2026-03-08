@@ -160,7 +160,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="label">위치</p>
-                  <p className="value">대구, 대한민국</p>
+                  <p className="value">서울, 대한민국</p>
                 </div>
               </div>
             </div>
